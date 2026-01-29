@@ -1,13 +1,16 @@
 # Program Kalkulator Sederhana
 # ----------------------------
-def tambah(x, y):
-    return x + y
-def kurang(x, y):
-    return x - y
-def kali(x, y):
-    return x * y
-def bagi(x, y):
-    return x / y
+def tambah(a,b):
+    return a+b
+def kurang(a,b):
+    return a-b
+def kali(a,b):
+    return a*b
+def bagi(a,b):
+    if b == 0:
+        return "Tidak bisa dibagi nol"
+    else:
+        return a/b
 def modulus(a,b):
     return a%b
 def pangkat(a,b):
