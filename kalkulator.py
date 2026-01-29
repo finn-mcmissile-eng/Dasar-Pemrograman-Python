@@ -29,7 +29,7 @@ def jalankan_kalkulator():
         
         pilihan = input("Masukkan pilihan (1/2/3/4/5/6) atau 'X' untuk keluar: ")
         
-        if pilihan.lower == 'x':
+        if pilihan.lower() == 'x':
             print("Terima kasih, silakan kembali lagi!")
             break
             
@@ -53,6 +53,7 @@ def jalankan_kalkulator():
                 print(f"Hasil: {modulus(angka1, angka2)}")
             elif pilihan == '6':
                 print(f"Hasil: {pangkat(angka1, angka2)}")
+                
         else:
             print("Pilihan tidak valid!")
 
