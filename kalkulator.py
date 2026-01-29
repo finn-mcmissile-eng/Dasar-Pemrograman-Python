@@ -16,7 +16,6 @@ def modulus(a,b):
 def pangkat(a,b):
     return a**b
 
-
 def jalankan_kalkulator():
     print("Pilih operasi: ")
     print("1. Tambah")
@@ -27,11 +26,14 @@ def jalankan_kalkulator():
     print("6. Pangkat")
 
     while True:
+        
         pilihan = input("Masukkan pilihan (1/2/3/4/5/6) atau 'X' untuk keluar: ")
+        
         if pilihan.lower == 'x':
             print("Terima kasih, silakan kembali lagi!")
             break
-        if pilihan in ("1", "2", "3", "4", "5", "6"):
+            
+        if pilihan in ('1', '2', '3', '4', '5', '6'):
             try:
                 angka1 = float(input("Masukkan angka pertama: "))
                 angka2 = float(input("Masukkan angka kedua: "))
@@ -51,8 +53,8 @@ def jalankan_kalkulator():
                 print(f"Hasil: {modulus(angka1, angka2)}")
             elif pilihan == '6':
                 print(f"Hasil: {pangkat(angka1, angka2)}")
-            else:
-                print("Pilihan tidak valid!")
+        else:
+            print("Pilihan tidak valid!")
 
 if __name__ == "__main__":
     jalankan_kalkulator()
