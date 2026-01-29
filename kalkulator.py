@@ -27,17 +27,17 @@ def jalankan_kalkulator():
     print("6. Pangkat")
 
     while True:
-            pilihan = input("Masukkan pilihan (1/2/3/4/5/6) atau 'X' untuk keluar: ")
-            if pilihan.lower == 'x':
-                print("Terima kasih, silakan kembali lagi!")
-                break
-            if pilihan in ("1", "2", "3", "4", "5", "6"):
-                try:
-                    angka1 = float(input("Masukkan angka pertama: "))
-                    angka2 = float(input("Masukkan angka kedua: "))
-                except ValueError:
-                    print("Kesalahan, Coba Lagi!")
-                    continue
+        pilihan = input("Masukkan pilihan (1/2/3/4/5/6) atau 'X' untuk keluar: ")
+        if pilihan.lower == 'x':
+            print("Terima kasih, silakan kembali lagi!")
+            break
+        if pilihan in ("1", "2", "3", "4", "5", "6"):
+            try:
+                angka1 = float(input("Masukkan angka pertama: "))
+                angka2 = float(input("Masukkan angka kedua: "))
+            except ValueError:
+                print("Kesalahan, Coba Lagi!")
+                continue
 
             if pilihan == '1':
                 print(f"Hasil: {tambah(angka1, angka2)}")
