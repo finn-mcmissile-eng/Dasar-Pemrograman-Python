@@ -1,5 +1,16 @@
 # Program Kalkulator Sederhana
 # ----------------------------
+def operasi():
+    print("="*15)
+    print("Pilih operasi: ")
+    print("="*15)
+    print("1. Tambah")
+    print("2. Kurang")
+    print("3. Kali")
+    print("4. Bagi")
+    print("5. Modulus")
+    print("6. Pangkat")
+    
 def tambah(a,b):
     return a+b
 def kurang(a,b):
@@ -26,7 +37,8 @@ def jalankan_kalkulator():
     print("6. Pangkat")
 
     while True:
-        
+
+        operasi()
         pilihan = input("Masukkan pilihan (1/2/3/4/5/6) atau 'X' untuk keluar: ")
         
         if pilihan.lower() == 'x':
