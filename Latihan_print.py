@@ -1,0 +1,5 @@
+print("=================================")
+print("Nama    : Yobel Christian Halawa")
+print("Kelas   : 15.1A.05")
+print("Jurusan : Informatika")
+print("=================================")
